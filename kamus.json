@@ -1,0 +1,1808 @@
+[
+  {
+    "id": 1,
+    "kaili_ledo": "Aa",
+    "indonesia": "Partikel dipakai untuk menunjukkan tidak menyukai melakukan sesuatu",
+    "contoh": "Koi hau manambu uve! Aa! Pergi ambil air! Tidak mau"
+  },
+  {
+    "id": 2,
+    "kaili_ledo": "Abalaa",
+    "indonesia": "Kecelakaan, musibah, malapetaka",
+    "contoh": "Nee hau ri kandalana, mbelaka maria abala manggava iko ngena! Jangan pergi ke bagian yang dalam, seandainya ada musibah mendapat kamu nanti!"
+  },
+  {
+    "id": 3,
+    "kaili_ledo": "Ade",
+    "indonesia": "Dagu",
+    "contoh": ""
+  },
+  {
+    "id": 4,
+    "kaili_ledo": "Adena",
+    "indonesia": "Bagian ujung gagang pedang yang melindungi tangan",
+    "contoh": ""
+  },
+  {
+    "id": 5,
+    "kaili_ledo": "Ade Ntule",
+    "indonesia": "Bagian bawah tangkai buah pohon enau",
+    "contoh": ""
+  },
+  {
+    "id": 6,
+    "kaili_ledo": "Nompangadu",
+    "indonesia": "Melaporkan",
+    "contoh": "Ane tesana masala, ia mamala rapanganduka. Kalau salah yang dia katakan, dia dapat dibawa ke pengadilan"
+  },
+  {
+    "id": 7,
+    "kaili_ledo": "Aga",
+    "indonesia": "Cuma, hanya",
+    "contoh": "Aga sanggani nakava ira. Mereka hanya satu kali datang."
+  },
+  {
+    "id": 8,
+    "kaili_ledo": "Aga",
+    "indonesia": "Tetapi, melainkan",
+    "contoh": "Niulina ia makava, aga ledo nakava. Katanya akan datang, tetapi tidak datang"
+  },
+  {
+    "id": 9,
+    "kaili_ledo": "Agaiana",
+    "indonesia": "Tetapi",
+    "contoh": "Aga kandea mpuu naoge sakide nikande nu madika, ane uta bo bau aga njongona nikabena, apa nirampai mpengaya. Agaiana I Doko nagali mpaesa kandeana bo uta nte bauna. Bangsawan hanya makan nasi agak banyak, kalau sayur dengan daging  dia hanya \nambil sediki"
+  },
+  {
+    "id": 10,
+    "kaili_ledo": "Agama",
+    "indonesia": "Agama",
+    "contoh": ""
+  },
+  {
+    "id": 11,
+    "kaili_ledo": "Noagama",
+    "indonesia": "Beragama",
+    "contoh": ""
+  },
+  {
+    "id": 12,
+    "kaili_ledo": "Noagi",
+    "indonesia": "Memilih isteri atau suami untuk anaknya; menjodohkan",
+    "contoh": "Totua nggapuri hii domo noagi anana. Orang tua sekarang tidak memilih jodoh untuk anaknya"
+  },
+  {
+    "id": 13,
+    "kaili_ledo": "Nanggeni Agi",
+    "indonesia": "Mengandalkan kekuatan sendiri; orang yang tidak bergantung kepada pandangan-pandangan orang lain;",
+    "contoh": ""
+  },
+  {
+    "id": 14,
+    "kaili_ledo": "Nangagi",
+    "indonesia": "Mengancam; bergerak seakan-akan akan melakukan pukulan, sepak, tinju, tampar, tikam, tombak, parang, dll.",
+    "contoh": ""
+  },
+  {
+    "id": 15,
+    "kaili_ledo": "Agina",
+    "indonesia": "Lebih baik",
+    "contoh": "Ledo nabelo ane nalimpuno mata, agina nee manginu tule. Tidak baik kalau kita mabuk, lebih baik jangan minum saguer."
+  },
+  {
+    "id": 16,
+    "kaili_ledo": "Aginamo",
+    "indonesia": "Sebaiknya; menyesal keputusan yg pernah dibuat.",
+    "contoh": ""
+  },
+  {
+    "id": 17,
+    "kaili_ledo": "Aginapa",
+    "indonesia": "Lebih baik",
+    "contoh": ""
+  },
+  {
+    "id": 18,
+    "kaili_ledo": "Nangago",
+    "indonesia": "Merampas",
+    "contoh": ""
+  },
+  {
+    "id": 19,
+    "kaili_ledo": "Nangagosi",
+    "indonesia": "Merampas",
+    "contoh": ""
+  },
+  {
+    "id": 20,
+    "kaili_ledo": "Mbara-Mbara Niago",
+    "indonesia": "barang rampasan.",
+    "contoh": ""
+  },
+  {
+    "id": 21,
+    "kaili_ledo": "Topeago",
+    "indonesia": "Orang yang suka merampas",
+    "contoh": ""
+  },
+  {
+    "id": 22,
+    "kaili_ledo": "Nosiago",
+    "indonesia": "Saling merampas.",
+    "contoh": "Mosiago tona mesua ra oto. Orang berdesak-desak masuk ke dalam mobil"
+  },
+  {
+    "id": 23,
+    "kaili_ledo": "Ahera",
+    "indonesia": "akhirat",
+    "contoh": ""
+  },
+  {
+    "id": 24,
+    "kaili_ledo": "Noaja",
+    "indonesia": "Memotong panjang dari ujung ke ujung, seperti cara memotong tomat, terong, bawang; memotong kecil dan panjang.",
+    "contoh": ""
+  },
+  {
+    "id": 25,
+    "kaili_ledo": "Noajari",
+    "indonesia": "mengajar.",
+    "contoh": ""
+  },
+  {
+    "id": 26,
+    "kaili_ledo": "Nangaji",
+    "indonesia": "mengaji",
+    "contoh": ""
+  },
+  {
+    "id": 27,
+    "kaili_ledo": "Ajima",
+    "indonesia": "jimat",
+    "contoh": ""
+  },
+  {
+    "id": 28,
+    "kaili_ledo": "Nangajo Tesa",
+    "indonesia": "nada suara naik turun, seperti logat orang dari tempat lain",
+    "contoh": ""
+  },
+  {
+    "id": 29,
+    "kaili_ledo": "Nangajo Nolipa",
+    "indonesia": "jalan sambil bergoyang \nmencari gaya.",
+    "contoh": ""
+  },
+  {
+    "id": 30,
+    "kaili_ledo": "Neaju",
+    "indonesia": "berpura-pura menyerang dgn tombak, dibuat untuk menyambut tamu.",
+    "contoh": ""
+  },
+  {
+    "id": 31,
+    "kaili_ledo": "Eo Aka",
+    "indonesia": "hari minggu",
+    "contoh": ""
+  },
+  {
+    "id": 32,
+    "kaili_ledo": "Akala",
+    "indonesia": "cara, jalan, siasat, niat.",
+    "contoh": ""
+  },
+  {
+    "id": 33,
+    "kaili_ledo": "Noakala",
+    "indonesia": "memberi alasan, bersiasat, banyak niat yg mau dicoba-coba",
+    "contoh": ""
+  },
+  {
+    "id": 34,
+    "kaili_ledo": "Nombaakalani",
+    "indonesia": "mengkhianat; menipu; mengakali; tipu muslihat; mengelabui.",
+    "contoh": ""
+  },
+  {
+    "id": 35,
+    "kaili_ledo": "Neakalani",
+    "indonesia": "menipu",
+    "contoh": ""
+  },
+  {
+    "id": 36,
+    "kaili_ledo": "Opeakalani",
+    "indonesia": "penipu.",
+    "contoh": ""
+  },
+  {
+    "id": 37,
+    "kaili_ledo": "Tompangakalani",
+    "indonesia": "menyembunyikan",
+    "contoh": ""
+  },
+  {
+    "id": 38,
+    "kaili_ledo": "Akeka",
+    "indonesia": "aqiqah",
+    "contoh": ""
+  },
+  {
+    "id": 39,
+    "kaili_ledo": "Noakeka",
+    "indonesia": "acara menyembelih kambing",
+    "contoh": ""
+  },
+  {
+    "id": 40,
+    "kaili_ledo": "Yaku",
+    "indonesia": "saya, aku",
+    "contoh": ""
+  },
+  {
+    "id": 41,
+    "kaili_ledo": "Akupa",
+    "indonesia": "giliran saya",
+    "contoh": ""
+  },
+  {
+    "id": 42,
+    "kaili_ledo": "Nangaku",
+    "indonesia": "1)mengaku 2) monopoli; maunya untuk diri sendiri.",
+    "contoh": ""
+  },
+  {
+    "id": 43,
+    "kaili_ledo": "Nompangaku",
+    "indonesia": "mengakui.",
+    "contoh": ""
+  },
+  {
+    "id": 44,
+    "kaili_ledo": "Nompangakusi",
+    "indonesia": "menyatakan hak atas milik orang lain.",
+    "contoh": "Nipangakusi i Yalimo pomanggiku. Yali menyatakan hak atas cangkul saya."
+  },
+  {
+    "id": 45,
+    "kaili_ledo": "Nangala",
+    "indonesia": "Mengambil",
+    "contoh": "Ane radekeina ka yaku, kuala. Kalau diberikan kepada saya, saya akan mengambil."
+  },
+  {
+    "id": 46,
+    "kaili_ledo": "Pangala",
+    "indonesia": "tempat mengambil",
+    "contoh": "Ri umba pangalamu susu kate namomi gaga? Di mana kau ambil susu yang begitu manis?"
+  },
+  {
+    "id": 47,
+    "kaili_ledo": "Nialasi",
+    "indonesia": "diambil tanpa izin pemilik.",
+    "contoh": ""
+  },
+  {
+    "id": 48,
+    "kaili_ledo": "Nombaala",
+    "indonesia": "mengambilkan.",
+    "contoh": "Yaku hau mombaala ose ka komiu.  Saya pergi \nmengambilkan beras untukmu."
+  },
+  {
+    "id": 49,
+    "kaili_ledo": "Rapangala",
+    "indonesia": "tempat untuk mengambil",
+    "contoh": "Riumba rapangala balon? Di mana tempat ambil balon?"
+  },
+  {
+    "id": 50,
+    "kaili_ledo": "Nosiala Pale",
+    "indonesia": "saling bergilir dalam pekerjaan; saling bertukar tenaga.",
+    "contoh": ""
+  },
+  {
+    "id": 51,
+    "kaili_ledo": "Nompasiala",
+    "indonesia": "meniru; mengikuti teladan orang.",
+    "contoh": ""
+  },
+  {
+    "id": 52,
+    "kaili_ledo": "Nangala Rara",
+    "indonesia": "mempersenang hati orang supaya disayangi; mengambil hati.",
+    "contoh": ""
+  },
+  {
+    "id": 53,
+    "kaili_ledo": "Ala",
+    "indonesia": "agar, supaya.",
+    "contoh": "Nidundusiku doyata ala ledo masovu. Saya menyiram halaman supaya tidak banyak debu."
+  },
+  {
+    "id": 54,
+    "kaili_ledo": "Alasa",
+    "indonesia": "alasan",
+    "contoh": ""
+  },
+  {
+    "id": 55,
+    "kaili_ledo": "Alasa Mate",
+    "indonesia": "alasan dibuat-buat.",
+    "contoh": ""
+  },
+  {
+    "id": 56,
+    "kaili_ledo": "Nangalataka",
+    "indonesia": "lompatan atau langkah pendek yg pertama diambil untuk mulai suatu lomba atau untuk melompat",
+    "contoh": ""
+  },
+  {
+    "id": 57,
+    "kaili_ledo": "Pangalataka",
+    "indonesia": "tempat bertolak perlombaan, tempat mulai.",
+    "contoh": "Dako ri pangalataka singgani-nggani sapedara tatalu, eva nidaiti. Dari tempat bertolak perlombaan, tiga sepeda itu bersama\u0002sama seakan-akan diikat."
+  },
+  {
+    "id": 58,
+    "kaili_ledo": "Rapangalatakata",
+    "indonesia": "tempat memulai lomba.",
+    "contoh": ""
+  },
+  {
+    "id": 59,
+    "kaili_ledo": "Ala Ta Ala",
+    "indonesia": "Tuhan yang Maha Esa.",
+    "contoh": ""
+  },
+  {
+    "id": 60,
+    "kaili_ledo": "Ale",
+    "indonesia": "Panggilan yang dipakai oleh sesama laki\u0002laki",
+    "contoh": ""
+  },
+  {
+    "id": 61,
+    "kaili_ledo": "Noale",
+    "indonesia": "menjalin-anyamkan; cara mengikat s.s. dgn rotan atau tali supaya ujungnya tidak terlepas",
+    "contoh": ""
+  },
+  {
+    "id": 62,
+    "kaili_ledo": "Niale",
+    "indonesia": "mengikat dengan menjalin, biasa memakai rotan.",
+    "contoh": ""
+  },
+  {
+    "id": 63,
+    "kaili_ledo": "Alena",
+    "indonesia": "ikatan pada sarung pedang untuk mengeratkan; simpai",
+    "contoh": ""
+  },
+  {
+    "id": 64,
+    "kaili_ledo": "Poale Mbiti Kada",
+    "indonesia": "1) bagian kaki yg tipis; bagian tangan yg tipis; anyaman.  2) gelang kaki atau gelang tangan buat dari rotan.",
+    "contoh": ""
+  },
+  {
+    "id": 65,
+    "kaili_ledo": "Sarimpoale Mbiti",
+    "indonesia": "ukuran dalam/tinggi dari tanah ke pertengahan kaki bawah",
+    "contoh": ""
+  },
+  {
+    "id": 66,
+    "kaili_ledo": "Nangali",
+    "indonesia": "membeli",
+    "contoh": ""
+  },
+  {
+    "id": 67,
+    "kaili_ledo": "Alina",
+    "indonesia": "harganya",
+    "contoh": ""
+  },
+  {
+    "id": 68,
+    "kaili_ledo": "Nateali",
+    "indonesia": "terbeli",
+    "contoh": "Nateali buku hitu, nisarumakaku buku niulimiu. Buku ini terbeli, saya kira buku ini yang dimaksudmu."
+  },
+  {
+    "id": 69,
+    "kaili_ledo": "Noposiali",
+    "indonesia": "saling dibeli-beli, banyak orang membeli.",
+    "contoh": "Naupu tambue niposialisi ntona. Habis kacang dibeli oleh orang banyak."
+  },
+  {
+    "id": 70,
+    "kaili_ledo": "Topangali",
+    "indonesia": "pembeli",
+    "contoh": ""
+  },
+  {
+    "id": 71,
+    "kaili_ledo": "Noali",
+    "indonesia": "berharga",
+    "contoh": ""
+  },
+  {
+    "id": 72,
+    "kaili_ledo": "Nangaliaka",
+    "indonesia": "memindahkan, menyingkirkan, mengambil dari suatu tempat",
+    "contoh": ""
+  },
+  {
+    "id": 73,
+    "kaili_ledo": "Alima",
+    "indonesia": "lima",
+    "contoh": ""
+  },
+  {
+    "id": 74,
+    "kaili_ledo": "Alinea",
+    "indonesia": "paragraf, alinea",
+    "contoh": ""
+  },
+  {
+    "id": 75,
+    "kaili_ledo": "Alisi Mata",
+    "indonesia": "alis mata",
+    "contoh": ""
+  },
+  {
+    "id": 76,
+    "kaili_ledo": "Alo",
+    "indonesia": "burung enggang besar yg mempunyai jambul merah yg besar di kepalanya",
+    "contoh": ""
+  },
+  {
+    "id": 77,
+    "kaili_ledo": "Alu",
+    "indonesia": "alat penumbuk padi.",
+    "contoh": ""
+  },
+  {
+    "id": 78,
+    "kaili_ledo": "Alusu",
+    "indonesia": "semacam piring antik yg putih dan dangkal atau rata.",
+    "contoh": ""
+  },
+  {
+    "id": 79,
+    "kaili_ledo": "Neamba",
+    "indonesia": "melemparkan, seperti melemparkan batu ke tempat tertentu dalam mainan anak\u0002anak",
+    "contoh": ""
+  },
+  {
+    "id": 80,
+    "kaili_ledo": "Peambana",
+    "indonesia": "gilirannya melempar; lemparan; tempat jatuhnya barang yg dilemparkan; tempat berdiri orang yang melempar.",
+    "contoh": ""
+  },
+  {
+    "id": 81,
+    "kaili_ledo": "Ambe",
+    "indonesia": "di bawah",
+    "contoh": ""
+  },
+  {
+    "id": 82,
+    "kaili_ledo": "Ri Ambena",
+    "indonesia": "di bawahnya",
+    "contoh": ""
+  },
+  {
+    "id": 83,
+    "kaili_ledo": "Nomparitambe",
+    "indonesia": "merendahkan, taruh di bawah",
+    "contoh": ""
+  },
+  {
+    "id": 84,
+    "kaili_ledo": "Netiriambe",
+    "indonesia": "merendahkan diri",
+    "contoh": ""
+  },
+  {
+    "id": 85,
+    "kaili_ledo": "Ampa",
+    "indonesia": "empat",
+    "contoh": ""
+  },
+  {
+    "id": 86,
+    "kaili_ledo": "Kapata-Nggani",
+    "indonesia": "keempat kali",
+    "contoh": ""
+  },
+  {
+    "id": 87,
+    "kaili_ledo": "Ampayu",
+    "indonesia": "empedu",
+    "contoh": ""
+  },
+  {
+    "id": 88,
+    "kaili_ledo": "Ampena",
+    "indonesia": "perangainya; sifat batin manusia",
+    "contoh": ""
+  },
+  {
+    "id": 89,
+    "kaili_ledo": "Ampu",
+    "indonesia": "ampun",
+    "contoh": ""
+  },
+  {
+    "id": 90,
+    "kaili_ledo": "Nerapi Ampu",
+    "indonesia": "minta ampun.",
+    "contoh": ""
+  },
+  {
+    "id": 91,
+    "kaili_ledo": "Nombaampungi",
+    "indonesia": "mengampuni",
+    "contoh": ""
+  },
+  {
+    "id": 92,
+    "kaili_ledo": "Nosiampungi",
+    "indonesia": "saling mengampuni; saling memafkan",
+    "contoh": ""
+  },
+  {
+    "id": 93,
+    "kaili_ledo": "Noamu Kadue",
+    "indonesia": "enak, lunak karena serabut tidak keras, khusus keladi",
+    "contoh": "Noamu nikita, apa uga naoya. Lunak dilihat karena serabut sudah masak."
+  },
+  {
+    "id": 94,
+    "kaili_ledo": "Ana",
+    "indonesia": "anak, khusus keturunan.",
+    "contoh": ""
+  },
+  {
+    "id": 95,
+    "kaili_ledo": "Ana Kodi",
+    "indonesia": "bayi",
+    "contoh": ""
+  },
+  {
+    "id": 96,
+    "kaili_ledo": "Ana Panggaupu",
+    "indonesia": "anak bungsu",
+    "contoh": ""
+  },
+  {
+    "id": 97,
+    "kaili_ledo": "Ana Lumbula",
+    "indonesia": "anak sulung",
+    "contoh": ""
+  },
+  {
+    "id": 98,
+    "kaili_ledo": "Rapoana",
+    "indonesia": "1) kemenakan; bersaudara dengan orang dari generasi yang sama dengan anak sendiri, yaitu anak saudara kandung dan anak sepupu 2) untuk dijadikan anak \nsendiri.",
+    "contoh": ""
+  },
+  {
+    "id": 99,
+    "kaili_ledo": "Noana",
+    "indonesia": "1) melahirkan. give birth. 2) mempunyai anak; beranak",
+    "contoh": ""
+  },
+  {
+    "id": 100,
+    "kaili_ledo": "Kapoanana",
+    "indonesia": "sementara melahirkan; begitu akan melahirkan",
+    "contoh": ""
+  },
+  {
+    "id": 101,
+    "kaili_ledo": "Ana Patuvu",
+    "indonesia": "anak piara, anak angkat.",
+    "contoh": ""
+  },
+  {
+    "id": 102,
+    "kaili_ledo": "Ana Pailusi",
+    "indonesia": "anak piatu",
+    "contoh": ""
+  },
+  {
+    "id": 103,
+    "kaili_ledo": "Ana Pailumpaka",
+    "indonesia": "anak yatim piatu",
+    "contoh": ""
+  },
+  {
+    "id": 104,
+    "kaili_ledo": "Namate Mpoana",
+    "indonesia": "meninggal dalam bersalin",
+    "contoh": ""
+  },
+  {
+    "id": 105,
+    "kaili_ledo": "Nadaa Poana",
+    "indonesia": "susah melahirkan.",
+    "contoh": ""
+  },
+  {
+    "id": 106,
+    "kaili_ledo": "Nipoanaka Mpanjili",
+    "indonesia": "dilahirkan kembali.",
+    "contoh": ""
+  },
+  {
+    "id": 107,
+    "kaili_ledo": "Natiana",
+    "indonesia": "hamil; mengandung. pregnant. manusia dan binatang",
+    "contoh": ""
+  },
+  {
+    "id": 108,
+    "kaili_ledo": "Katiana",
+    "indonesia": "kehamilan",
+    "contoh": ""
+  },
+  {
+    "id": 109,
+    "kaili_ledo": "Nompakatiana",
+    "indonesia": "menghamili; mengandungkan.",
+    "contoh": ""
+  },
+  {
+    "id": 110,
+    "kaili_ledo": "Nikatianaka",
+    "indonesia": "masih dalam kandungan; dikandung",
+    "contoh": "I Toni da nikatianaka ntinana tempo lingu mbaso baipia. Toni masih dalam kandungan ibunya waktu gempa bumi besar dulu"
+  },
+  {
+    "id": 111,
+    "kaili_ledo": "Nompopoana Doi",
+    "indonesia": "membungakan uang; simpang uang di bank supaya ada bunganya.",
+    "contoh": ""
+  },
+  {
+    "id": 112,
+    "kaili_ledo": "Ana Rungga",
+    "indonesia": "anak kutu yang baru menetas",
+    "contoh": ""
+  },
+  {
+    "id": 113,
+    "kaili_ledo": "Ana Bimba",
+    "indonesia": "anak domba",
+    "contoh": ""
+  },
+  {
+    "id": 114,
+    "kaili_ledo": "Ana Japi",
+    "indonesia": "anak sapi",
+    "contoh": ""
+  },
+  {
+    "id": 115,
+    "kaili_ledo": "Ana Guru",
+    "indonesia": "murid",
+    "contoh": ""
+  },
+  {
+    "id": 116,
+    "kaili_ledo": "Ana Koda",
+    "indonesia": "ketua kelompok anak buah kapal laut, majikan",
+    "contoh": ""
+  },
+  {
+    "id": 117,
+    "kaili_ledo": "Ane",
+    "indonesia": "kalau, jika; anai-anai, rapi",
+    "contoh": ""
+  },
+  {
+    "id": 118,
+    "kaili_ledo": "Kayu Anga",
+    "indonesia": "sejenis pohon yang dianggap terkutuk; bisa menyebabkan alergi [gatal dan pembengkak] pada orang tertentu",
+    "contoh": ""
+  },
+  {
+    "id": 119,
+    "kaili_ledo": "Neangga",
+    "indonesia": "berdiri",
+    "contoh": ""
+  },
+  {
+    "id": 120,
+    "kaili_ledo": "Peanggana",
+    "indonesia": "tempat, tempat berdiri",
+    "contoh": ""
+  },
+  {
+    "id": 121,
+    "kaili_ledo": "Nompopeangga",
+    "indonesia": "mendirikan",
+    "contoh": ""
+  },
+  {
+    "id": 122,
+    "kaili_ledo": "Nipepeangga",
+    "indonesia": "didirikan kembali, seperti tangga yg jatuh.",
+    "contoh": ""
+  },
+  {
+    "id": 123,
+    "kaili_ledo": "Nosimpeangga",
+    "indonesia": "berdiri bersama-sama",
+    "contoh": ""
+  },
+  {
+    "id": 124,
+    "kaili_ledo": "Niangga",
+    "indonesia": "dianggap; dihargai.",
+    "contoh": ""
+  },
+  {
+    "id": 125,
+    "kaili_ledo": "Nosimpeanggasi",
+    "indonesia": "saling naik emosi, amarah, dll.",
+    "contoh": ""
+  },
+  {
+    "id": 126,
+    "kaili_ledo": "Nipeanggasi",
+    "indonesia": "dilawan",
+    "contoh": ""
+  },
+  {
+    "id": 127,
+    "kaili_ledo": "Nanganggataka",
+    "indonesia": "mengangkat",
+    "contoh": ""
+  },
+  {
+    "id": 128,
+    "kaili_ledo": "Neanggataka",
+    "indonesia": "berangkat",
+    "contoh": ""
+  },
+  {
+    "id": 129,
+    "kaili_ledo": "Nateanggataka",
+    "indonesia": "terangkat",
+    "contoh": ""
+  },
+  {
+    "id": 130,
+    "kaili_ledo": "Anggo",
+    "indonesia": "kera, monyet.",
+    "contoh": ""
+  },
+  {
+    "id": 131,
+    "kaili_ledo": "Angguru",
+    "indonesia": "buah anggur, dan minuman keras dibuat dari buah anggur.",
+    "contoh": ""
+  },
+  {
+    "id": 132,
+    "kaili_ledo": "Angu",
+    "indonesia": "kata penggolong untuk biji-bijian atau butir; dipakai juga sebagai kata penggolong untuk barang besar seperti rumah, mobil, jalan, dan binatang besar seperti anoa, sapi, kambing, kuda, rusa, dll. Dipakai juga sebagai kata penggolong umum.",
+    "contoh": ""
+  },
+  {
+    "id": 133,
+    "kaili_ledo": "Saangu",
+    "indonesia": "sebuah",
+    "contoh": ""
+  },
+  {
+    "id": 134,
+    "kaili_ledo": "Noangu",
+    "indonesia": "berbiji",
+    "contoh": ""
+  },
+  {
+    "id": 135,
+    "kaili_ledo": "Naliangu",
+    "indonesia": "menjadi bundar",
+    "contoh": ""
+  },
+  {
+    "id": 136,
+    "kaili_ledo": "Pokaliangu",
+    "indonesia": "bundarkan",
+    "contoh": ""
+  },
+  {
+    "id": 137,
+    "kaili_ledo": "Angu Mata",
+    "indonesia": "bola mata",
+    "contoh": ""
+  },
+  {
+    "id": 138,
+    "kaili_ledo": "Anitu",
+    "indonesia": "sejenis orang halus yg jadi dari arwah, tetapi tidak semua arwah menjadi anitu",
+    "contoh": ""
+  },
+  {
+    "id": 139,
+    "kaili_ledo": "Anja",
+    "indonesia": "mangga yang berbau, mangga kuini, mangga embacang.",
+    "contoh": ""
+  },
+  {
+    "id": 140,
+    "kaili_ledo": "Ante",
+    "indonesia": "dengan, dan, bersama",
+    "contoh": ""
+  },
+  {
+    "id": 141,
+    "kaili_ledo": "Neanto",
+    "indonesia": "meramal, khusus untuk mendapat s.s. yg hilang atau mengenal penyakit",
+    "contoh": ""
+  },
+  {
+    "id": 142,
+    "kaili_ledo": "Peanto",
+    "indonesia": "ramalan",
+    "contoh": ""
+  },
+  {
+    "id": 143,
+    "kaili_ledo": "Topeanto",
+    "indonesia": "orang yang meramalkan; ahli peramal",
+    "contoh": ""
+  },
+  {
+    "id": 144,
+    "kaili_ledo": "Nompekianto",
+    "indonesia": "minta ramalan",
+    "contoh": ""
+  },
+  {
+    "id": 145,
+    "kaili_ledo": "Nanganto",
+    "indonesia": "1) melihat bayangan badan sendiri di cermin atau di air; nonton diri sendiri berjalan. 2) memandang dari jauh.",
+    "contoh": ""
+  },
+  {
+    "id": 146,
+    "kaili_ledo": "Neantoaka",
+    "indonesia": "memandang atau nonton dari tempat yg jauh",
+    "contoh": "Ira aga neangga neantoaka nggavao bo nikitara unu nu apu haitu. Mereka hanya berdiri nonton dari jauh, dan melihat asap itu"
+  },
+  {
+    "id": 147,
+    "kaili_ledo": "Nangantoaka",
+    "indonesia": "memandang pemandangan atau orang lain yg jauh",
+    "contoh": "Niantoakara ako ri buntina moitu kami nokarajaa ri \nlobuna. Dari bukit itu mereka menonton kami \nbekerja di lembah."
+  },
+  {
+    "id": 148,
+    "kaili_ledo": "Anu",
+    "indonesia": "1) yang (konjungsi), 2) dipakai kalau sudah terlupa kata atau tidak \ntahu namanya; biasa juga dipakai supaya tidak \nperlu sebut namanya (kata benda)",
+    "contoh": "1) Niulikana puramo anu nialina ri potomu. Dia katakan semua yg dibeli di pasar, 2)Naanu vai, \nnosivunta vai ira. Sesudah rasa \nanu, mereka saling memercikkan lagi."
+  },
+  {
+    "id": 149,
+    "kaili_ledo": "Anumo",
+    "indonesia": "Silahkan, ayolah",
+    "contoh": ""
+  },
+  {
+    "id": 150,
+    "kaili_ledo": "Neanyu-Anyuka",
+    "indonesia": "mengejek-ejek",
+    "contoh": ""
+  },
+  {
+    "id": 151,
+    "kaili_ledo": "Ao",
+    "indonesia": "pembayaran kepada dukun untuk belajar doa",
+    "contoh": ""
+  },
+  {
+    "id": 152,
+    "kaili_ledo": "Nombaao",
+    "indonesia": "membayar dukun untuk doa dipelajari.",
+    "contoh": "Yaku neguru kakaba jadi niaoku samata ladi ka i Tapuntina. Saya mempelajari kebal, jadi saya bayar sebuah pisau ke Tapuntina."
+  },
+  {
+    "id": 153,
+    "kaili_ledo": "Aono",
+    "indonesia": "enam",
+    "contoh": ""
+  },
+  {
+    "id": 154,
+    "kaili_ledo": "Kaaonona",
+    "indonesia": "keenam",
+    "contoh": ""
+  },
+  {
+    "id": 155,
+    "kaili_ledo": "Apa",
+    "indonesia": "karena, sebab",
+    "contoh": ""
+  },
+  {
+    "id": 156,
+    "kaili_ledo": "Apu",
+    "indonesia": "api",
+    "contoh": ""
+  },
+  {
+    "id": 157,
+    "kaili_ledo": "Napapu",
+    "indonesia": "terbakar",
+    "contoh": ""
+  },
+  {
+    "id": 158,
+    "kaili_ledo": "Unu Nu Apu",
+    "indonesia": "asap",
+    "contoh": ""
+  },
+  {
+    "id": 159,
+    "kaili_ledo": "Noriapu",
+    "indonesia": "masak, menanak",
+    "contoh": ""
+  },
+  {
+    "id": 160,
+    "kaili_ledo": "Niporiapu",
+    "indonesia": "dimasak",
+    "contoh": ""
+  },
+  {
+    "id": 161,
+    "kaili_ledo": "Poriapu",
+    "indonesia": "masakan",
+    "contoh": ""
+  },
+  {
+    "id": 162,
+    "kaili_ledo": "Apu Napaya",
+    "indonesia": "api mati, api padam.",
+    "contoh": ""
+  },
+  {
+    "id": 163,
+    "kaili_ledo": "Apu Nipanderu",
+    "indonesia": "api unggun",
+    "contoh": ""
+  },
+  {
+    "id": 164,
+    "kaili_ledo": "Naara Tai",
+    "indonesia": "lapar",
+    "contoh": ""
+  },
+  {
+    "id": 165,
+    "kaili_ledo": "Nearasi",
+    "indonesia": "menjadikan lapar; menyebabkan kelaparan",
+    "contoh": "Tona haitu nootisi uve, tano dopa nabutu pae. Nearasi ia. Orang itu tutup air, padahal belum cukup untuk padi. Dia menyebabkan kelaparan nanti."
+  },
+  {
+    "id": 166,
+    "kaili_ledo": "Ara Mpai",
+    "indonesia": "kelaparan",
+    "contoh": ""
+  },
+  {
+    "id": 167,
+    "kaili_ledo": "Kaara Mpai",
+    "indonesia": "musim kelaparan; masa kekeringan",
+    "contoh": ""
+  },
+  {
+    "id": 168,
+    "kaili_ledo": "Naara Pangane",
+    "indonesia": "sesudah itu",
+    "contoh": ""
+  },
+  {
+    "id": 169,
+    "kaili_ledo": "Nompoara",
+    "indonesia": "menolak",
+    "contoh": ""
+  },
+  {
+    "id": 170,
+    "kaili_ledo": "Eo Arabaa",
+    "indonesia": "hari rabu",
+    "contoh": ""
+  },
+  {
+    "id": 171,
+    "kaili_ledo": "Are",
+    "indonesia": "pisau yg bentuknya melengkung yg dipakai untuk memotong padi atau rumput",
+    "contoh": ""
+  },
+  {
+    "id": 172,
+    "kaili_ledo": "Aropi",
+    "indonesia": "buah pohon lengkeng",
+    "contoh": ""
+  },
+  {
+    "id": 173,
+    "kaili_ledo": "Nompakaasa",
+    "indonesia": "meresmikan; memastikan cerita, rencana, janji; menjamin",
+    "contoh": "Nia posusa niovomo ivei, ane majadi mpuu, rapakaasa. Rencana untuk pesta ditentukan begitu, kalau sungguh\u0002sungguh akan jadi baru dipastikan."
+  },
+  {
+    "id": 174,
+    "kaili_ledo": "Naasa",
+    "indonesia": "dapat dipercaya; tentu; pasti.",
+    "contoh": "Domo naasa tesa, nadea kuvava, ledo ria isina. Pembicaraannya tidak dapat dipercaya lagi, banyak gurau tetapi tidak ada isinya"
+  },
+  {
+    "id": 175,
+    "kaili_ledo": "Niasa",
+    "indonesia": "dibuatkan pesta adat pokeso",
+    "contoh": ""
+  },
+  {
+    "id": 176,
+    "kaili_ledo": "Toniasa",
+    "indonesia": "orang yang dibuatkan pesta pokeso",
+    "contoh": ""
+  },
+  {
+    "id": 177,
+    "kaili_ledo": "Noasa",
+    "indonesia": "membersihkan bagian mata cincin yg rusak supaya menjadi baru; mengasah, membuat mata cincin lebih tipis",
+    "contoh": "Ane noasa sinji, batuana nompakanipi mata sinji. Kalau mengasah mata cincin, berarti membuat mata cincin itu lebih tipis"
+  },
+  {
+    "id": 178,
+    "kaili_ledo": "Asala",
+    "indonesia": "asal",
+    "contoh": "Pakemo, asala rapopanjili ngena. Pakailah, asal dikembalikan nanti."
+  },
+  {
+    "id": 179,
+    "kaili_ledo": "Ase Mpesonde",
+    "indonesia": "besi berani",
+    "contoh": ""
+  },
+  {
+    "id": 180,
+    "kaili_ledo": "Topobaluu Ase",
+    "indonesia": "orang yg bekerja dgn barang\u0002barang besi; orang yg membengkokkan besi atau menggulungkan besi; tukang besi.",
+    "contoh": ""
+  },
+  {
+    "id": 181,
+    "kaili_ledo": "Ase",
+    "indonesia": "1) Besi, 2)Asyik",
+    "contoh": ""
+  },
+  {
+    "id": 182,
+    "kaili_ledo": "Naase Mpuu",
+    "indonesia": "asyik sekali",
+    "contoh": ""
+  },
+  {
+    "id": 183,
+    "kaili_ledo": "Aselena",
+    "indonesia": "Hasilnya",
+    "contoh": ""
+  },
+  {
+    "id": 184,
+    "kaili_ledo": "Nompopoasele",
+    "indonesia": "menyukseskan; menyebabkan berhasil.",
+    "contoh": ""
+  },
+  {
+    "id": 185,
+    "kaili_ledo": "Asi Nu Mata",
+    "indonesia": "rasa kasihan",
+    "contoh": ""
+  },
+  {
+    "id": 186,
+    "kaili_ledo": "Naasi Mata",
+    "indonesia": "merasa kasihan; berbelas kasihan.",
+    "contoh": "Naasi mataku nanggita topunggu pangane. Saya rasa kasihan melihat orang cacat tadi."
+  },
+  {
+    "id": 187,
+    "kaili_ledo": "Napakasi",
+    "indonesia": "orang yang mempunyai cara hidup yang menyedihkan, yaitu orang miskin",
+    "contoh": ""
+  },
+  {
+    "id": 188,
+    "kaili_ledo": "Napakasi Mpaka",
+    "indonesia": "larat; miskin sekali",
+    "contoh": ""
+  },
+  {
+    "id": 189,
+    "kaili_ledo": "Poasi",
+    "indonesia": "kasih",
+    "contoh": ""
+  },
+  {
+    "id": 190,
+    "kaili_ledo": "Nompoasi",
+    "indonesia": "mengasihani; bermurah hati.",
+    "contoh": ""
+  },
+  {
+    "id": 191,
+    "kaili_ledo": "Nosipoasi Mata",
+    "indonesia": "saling berbelas kasihan",
+    "contoh": ""
+  },
+  {
+    "id": 192,
+    "kaili_ledo": "Pakasi Ranga!",
+    "indonesia": "kasihan!",
+    "contoh": ""
+  },
+  {
+    "id": 193,
+    "kaili_ledo": "Netiasi",
+    "indonesia": "minta dikasihani",
+    "contoh": ""
+  },
+  {
+    "id": 194,
+    "kaili_ledo": "Naaso",
+    "indonesia": "padat",
+    "contoh": ""
+  },
+  {
+    "id": 195,
+    "kaili_ledo": "Nombaaso",
+    "indonesia": "menekan seperti injak tanah, taruh barang di tempatnya dengan padat sekali; memadatkan; memasukkan dengan paksa.",
+    "contoh": ""
+  },
+  {
+    "id": 196,
+    "kaili_ledo": "Noaso Gimba",
+    "indonesia": "mengetatkan kulit tambur",
+    "contoh": ""
+  },
+  {
+    "id": 197,
+    "kaili_ledo": "Nosiaso",
+    "indonesia": "saling bersempit",
+    "contoh": ""
+  },
+  {
+    "id": 198,
+    "kaili_ledo": "Neaso",
+    "indonesia": "bersesak",
+    "contoh": ""
+  },
+  {
+    "id": 199,
+    "kaili_ledo": "Aspaa",
+    "indonesia": "aspal",
+    "contoh": ""
+  },
+  {
+    "id": 200,
+    "kaili_ledo": "Asu",
+    "indonesia": "anjing",
+    "contoh": ""
+  },
+  {
+    "id": 201,
+    "kaili_ledo": "Noasu",
+    "indonesia": "berburu",
+    "contoh": ""
+  },
+  {
+    "id": 202,
+    "kaili_ledo": "Topoasu",
+    "indonesia": "pemburu",
+    "contoh": ""
+  },
+  {
+    "id": 203,
+    "kaili_ledo": "Asu Poasu",
+    "indonesia": "anjing pemburu",
+    "contoh": ""
+  },
+  {
+    "id": 204,
+    "kaili_ledo": "Mpoasu",
+    "indonesia": "seperti anjing",
+    "contoh": "Nangande mpoasu ia, nombajojo hau, nasara rarana. Ia makan seperti anjing, dia makan cepat, tidak sabar"
+  },
+  {
+    "id": 205,
+    "kaili_ledo": "Niasukira",
+    "indonesia": "diburu oleh mereka",
+    "contoh": ""
+  },
+  {
+    "id": 206,
+    "kaili_ledo": "Naasu",
+    "indonesia": "bersifat anjing",
+    "contoh": ""
+  },
+  {
+    "id": 207,
+    "kaili_ledo": "Asulaku",
+    "indonesia": "musang",
+    "contoh": ""
+  },
+  {
+    "id": 208,
+    "kaili_ledo": "Ata",
+    "indonesia": "atap",
+    "contoh": ""
+  },
+  {
+    "id": 209,
+    "kaili_ledo": "Ata Jono",
+    "indonesia": "atap alang-alang",
+    "contoh": ""
+  },
+  {
+    "id": 210,
+    "kaili_ledo": "Ata Gente",
+    "indonesia": "atap genteng",
+    "contoh": ""
+  },
+  {
+    "id": 211,
+    "kaili_ledo": "Noata",
+    "indonesia": "beratap",
+    "contoh": ""
+  },
+  {
+    "id": 212,
+    "kaili_ledo": "Nompeata",
+    "indonesia": "membuat atap; memasang atap",
+    "contoh": "I Buri nompeatani banuana. Buri mengatapi rumahnya."
+  },
+  {
+    "id": 213,
+    "kaili_ledo": "Notosu Ata",
+    "indonesia": "membuat atap dari rumbia.",
+    "contoh": ""
+  },
+  {
+    "id": 214,
+    "kaili_ledo": "Nolati Ata",
+    "indonesia": "membuat atap dari rotan",
+    "contoh": ""
+  },
+  {
+    "id": 215,
+    "kaili_ledo": "Atau",
+    "indonesia": "atau",
+    "contoh": ""
+  },
+  {
+    "id": 216,
+    "kaili_ledo": "Ate",
+    "indonesia": "hati",
+    "contoh": ""
+  },
+  {
+    "id": 217,
+    "kaili_ledo": "Naoge Ate",
+    "indonesia": "rewel; seperti anak yg ingin melakukan padahal belum mampu, tetapi kalau orang lain membuatnya dia terus rewel bahwa dialah yg harus buat. f",
+    "contoh": ""
+  },
+  {
+    "id": 218,
+    "kaili_ledo": "Ate Bura",
+    "indonesia": "paru-paru",
+    "contoh": ""
+  },
+  {
+    "id": 219,
+    "kaili_ledo": "Ate Nggada",
+    "indonesia": "bagian telapak kaki yg melengkung; tapak kaki.",
+    "contoh": ""
+  },
+  {
+    "id": 220,
+    "kaili_ledo": "Noati Manu",
+    "indonesia": "ayam jantan yg sudah dilatih berkelahi, dipakai untuk menarik ayam hutan supaya ayam hutan itu dapat ditangkap; mengumpani ayam hutan dgn ayam biasa",
+    "contoh": ""
+  },
+  {
+    "id": 221,
+    "kaili_ledo": "Manu Poati",
+    "indonesia": "ayam (biasanya jantan) dipakai sebagai umpan.",
+    "contoh": ""
+  },
+  {
+    "id": 222,
+    "kaili_ledo": "Atu",
+    "indonesia": "ratus",
+    "contoh": "talu-atu tiga ratus"
+  },
+  {
+    "id": 223,
+    "kaili_ledo": "Noatu-Atu",
+    "indonesia": "ratusan",
+    "contoh": "Noatu-atu topokai Gumbasa saeo. Beratus-ratus orang yang menggali irigasi gumbasa dulu."
+  },
+  {
+    "id": 224,
+    "kaili_ledo": "Atura",
+    "indonesia": "aturan",
+    "contoh": ""
+  },
+  {
+    "id": 225,
+    "kaili_ledo": "Auna",
+    "indonesia": "gonggongan",
+    "contoh": ""
+  },
+  {
+    "id": 226,
+    "kaili_ledo": "Naava",
+    "indonesia": "berjauhan; jarang",
+    "contoh": ""
+  },
+  {
+    "id": 227,
+    "kaili_ledo": "Naavaraka",
+    "indonesia": "berjauhan",
+    "contoh": "Domo naavaraka banuana, nakavamo tona mombatomunaka kami. Tidak jauh lagi dari rumahnya, datang orang menjemput kami."
+  },
+  {
+    "id": 228,
+    "kaili_ledo": "Naave",
+    "indonesia": "dibawa oleh arus; hanyut",
+    "contoh": ""
+  },
+  {
+    "id": 229,
+    "kaili_ledo": "Nombaavesaka",
+    "indonesia": "menghanyutkan dengan arus air.",
+    "contoh": ""
+  },
+  {
+    "id": 230,
+    "kaili_ledo": "Nokaave",
+    "indonesia": "menghanyutkan diri",
+    "contoh": "Jadi nakava ri uve, nokaavemo natudu tasi. Jadi, waktu tiba di sungai, dia menghanyutkan diri sampai datang ke laut"
+  },
+  {
+    "id": 231,
+    "kaili_ledo": "Avei",
+    "indonesia": "wah",
+    "contoh": "Avei konau, nalei-nalei vayana nipokanavuna. Avei singgagaya bajura. Avei singgaramba vera. Wah, lihatlah enau, merah-merah cahayanya waktu dijatuhkan diri. Wah, sama cantik baju mereka. Wah, sama bagus hiasannya."
+  },
+  {
+    "id": 232,
+    "kaili_ledo": "Avo",
+    "indonesia": "sejenis bambu yang besar dan lurus yang dipakai untuk membangun tiang rumah; kulitnya dapat dibelah untuk membuat tali yg dipakai untuk mengikat lantai; bambu betung",
+    "contoh": ""
+  },
+  {
+    "id": 233,
+    "kaili_ledo": "Avu",
+    "indonesia": "abu dapur; abu bekas pembakaran",
+    "contoh": ""
+  },
+  {
+    "id": 234,
+    "kaili_ledo": "Naavu-Avu",
+    "indonesia": "kelabu, abu-abu",
+    "contoh": ""
+  },
+  {
+    "id": 235,
+    "kaili_ledo": "Avu",
+    "indonesia": "dapur; perapian",
+    "contoh": ""
+  },
+  {
+    "id": 236,
+    "kaili_ledo": "Aya",
+    "indonesia": "panggilan untuk sesama anak-anak perempuan",
+    "contoh": ""
+  },
+  {
+    "id": 237,
+    "kaili_ledo": "Noaya",
+    "indonesia": "1) menapis; membersihkan beras, 2)menjerat binatang",
+    "contoh": ""
+  },
+  {
+    "id": 238,
+    "kaili_ledo": "Noaya-Aya",
+    "indonesia": "mengayak dari kiri ke kanan",
+    "contoh": ""
+  },
+  {
+    "id": 239,
+    "kaili_ledo": "Nateaya",
+    "indonesia": "terjerat",
+    "contoh": "Asu Toi Dema nateaya tolia. Anjingnya Papa Dema terjerat."
+  },
+  {
+    "id": 240,
+    "kaili_ledo": "Nompakateaya",
+    "indonesia": "menjeratkan tali; menjadi ketat",
+    "contoh": "Ane komiu manginu pakuli nitagi nu pomarenta, haitu mompakateaya komiu. Kalau kamu minum narkoba, itu menjeratkan kamu."
+  },
+  {
+    "id": 241,
+    "kaili_ledo": "Noayo",
+    "indonesia": "jalan bolak-balik di antara dua atau lebih kampung atau tempat.",
+    "contoh": ""
+  },
+  {
+    "id": 242,
+    "kaili_ledo": "Nangayo",
+    "indonesia": "seperti ayam yg sudah mencari tempat bertelur",
+    "contoh": ""
+  },
+  {
+    "id": 243,
+    "kaili_ledo": "Nombaayo",
+    "indonesia": "mengunjungi orang sakit",
+    "contoh": "Ane kita nombaayo, kita hau ri banua ntona niayota. Kalau kita pergi mengunjungi orang, kita pergi ke rumah orang yg kita kunjungi."
+  },
+  {
+    "id": 244,
+    "kaili_ledo": "Nosiayo",
+    "indonesia": "saling mengunjungi",
+    "contoh": ""
+  },
+  {
+    "id": 245,
+    "kaili_ledo": "Nangayuma",
+    "indonesia": "menyediakan bahan untuk s.s. yg akan dibuat, misalnya kumpul kayu untuk membangun rumah, atau kumpul barang yg akan diperlukan untuk pesta",
+    "contoh": ""
+  },
+  {
+    "id": 246,
+    "kaili_ledo": "Ba",
+    "indonesia": "menunjukkan tidak percaya atau tidak setuju",
+    "contoh": "Ba! Mombayari maile vei. Katanya akan bayar besok (tetapi saya tidak percaya!) H"
+  },
+  {
+    "id": 247,
+    "kaili_ledo": "Kabaa-Baa",
+    "indonesia": "terbaring di tanah tanpa bergerak.",
+    "contoh": "Nikavana tomadua kabaa-baa naturu. Didapatnya orang sakit itu berbaring tanpa bergerak."
+  },
+  {
+    "id": 248,
+    "kaili_ledo": "Nobaba",
+    "indonesia": "dua orang memakai satu sarung atau satu baju sebagai mantel.",
+    "contoh": ""
+  },
+  {
+    "id": 249,
+    "kaili_ledo": "Buya Mpobaba",
+    "indonesia": "sarung yang tidak dijahit",
+    "contoh": ""
+  },
+  {
+    "id": 250,
+    "kaili_ledo": "Nibaba Buya",
+    "indonesia": "sarung yg tidak dijahit yg dipakai untuk menggendong anak di belakang.",
+    "contoh": ""
+  },
+  {
+    "id": 251,
+    "kaili_ledo": "Nipobaba",
+    "indonesia": "memakai sarung sebagai mantel untuk ditutup di belakang saja",
+    "contoh": ""
+  },
+  {
+    "id": 252,
+    "kaili_ledo": "Nababari",
+    "indonesia": "luka garutan, berdarah.",
+    "contoh": "Ane karoku njumangu nababari apa ledo nobaju nolipa rara njampune. Seluruh badan saya \nluka garutan karena saya tidak pakai baju \nwaktu berjalan lewat rambat."
+  },
+  {
+    "id": 253,
+    "kaili_ledo": "Babavoa",
+    "indonesia": "sejenis sayur",
+    "contoh": ""
+  },
+  {
+    "id": 254,
+    "kaili_ledo": "Nombaca",
+    "indonesia": "membaca",
+    "contoh": ""
+  },
+  {
+    "id": 255,
+    "kaili_ledo": "Baca Yasi",
+    "indonesia": "bersumpah",
+    "contoh": ""
+  },
+  {
+    "id": 256,
+    "kaili_ledo": "Bada",
+    "indonesia": "bedak",
+    "contoh": ""
+  },
+  {
+    "id": 257,
+    "kaili_ledo": "Nobada",
+    "indonesia": "memakai bedak",
+    "contoh": ""
+  },
+  {
+    "id": 258,
+    "kaili_ledo": "Nombade",
+    "indonesia": "1) ujungnya membengkok ke atas \n[besi, papan]. 2) membungkukkan badan ke belakang",
+    "contoh": ""
+  },
+  {
+    "id": 259,
+    "kaili_ledo": "Taono Badi",
+    "indonesia": "parang dengan ujungnya agak bundar",
+    "contoh": ""
+  },
+  {
+    "id": 260,
+    "kaili_ledo": "Bado",
+    "indonesia": "pakaian bayi",
+    "contoh": ""
+  },
+  {
+    "id": 261,
+    "kaili_ledo": "Nibado",
+    "indonesia": "diberi pakaian bayi",
+    "contoh": ""
+  },
+  {
+    "id": 262,
+    "kaili_ledo": "Nosibaga",
+    "indonesia": "saling berkelahi",
+    "contoh": ""
+  },
+  {
+    "id": 263,
+    "kaili_ledo": "Nebaga",
+    "indonesia": "berkelahi; menyerang",
+    "contoh": ""
+  },
+  {
+    "id": 264,
+    "kaili_ledo": "Topebaga",
+    "indonesia": "orang yang suka memakai kekerasan",
+    "contoh": ""
+  },
+  {
+    "id": 265,
+    "kaili_ledo": "Baga",
+    "indonesia": "geraham",
+    "contoh": ""
+  },
+  {
+    "id": 266,
+    "kaili_ledo": "Baga Supu",
+    "indonesia": "geraham bungsu",
+    "contoh": ""
+  },
+  {
+    "id": 267,
+    "kaili_ledo": "Baga Ntabaro",
+    "indonesia": "bagian pelepah daun sagu yg melekat pada batang sagu",
+    "contoh": ""
+  },
+  {
+    "id": 268,
+    "kaili_ledo": "Nakaa Baga",
+    "indonesia": "keras kepala, bandel",
+    "contoh": ""
+  },
+  {
+    "id": 269,
+    "kaili_ledo": "Nobagi",
+    "indonesia": "membagikan; memberi",
+    "contoh": ""
+  },
+  {
+    "id": 270,
+    "kaili_ledo": "Nombabagi-Bagi",
+    "indonesia": "membagi-bagi",
+    "contoh": ""
+  },
+  {
+    "id": 271,
+    "kaili_ledo": "Nomposibagi",
+    "indonesia": "saling membagi-bagikan",
+    "contoh": ""
+  },
+  {
+    "id": 272,
+    "kaili_ledo": "Natebagi-Bagi",
+    "indonesia": "terpisah, tidak bersatu",
+    "contoh": ""
+  },
+  {
+    "id": 273,
+    "kaili_ledo": "Kabagi-Randuana Polipana",
+    "indonesia": "setengah perjalanan",
+    "contoh": ""
+  },
+  {
+    "id": 274,
+    "kaili_ledo": "Nobagi Pekiri",
+    "indonesia": "ragu-ragu karena ada dua kemungkinan yg baik dan tidak tahu yg mana dipilih",
+    "contoh": ""
+  },
+  {
+    "id": 275,
+    "kaili_ledo": "Bagia",
+    "indonesia": "1) bagian.  2) daerah",
+    "contoh": "Nadea coklat ri bagia Palolo. Ada banyak coklat di daerah Palolo"
+  },
+  {
+    "id": 276,
+    "kaili_ledo": "Nebagiu",
+    "indonesia": "menipu",
+    "contoh": "Nasaro nebagiu topogade pakuli ri potomu. Penjual obat di pasar sering menipu orang."
+  },
+  {
+    "id": 277,
+    "kaili_ledo": "Topebagiu",
+    "indonesia": "penipu",
+    "contoh": ""
+  },
+  {
+    "id": 278,
+    "kaili_ledo": "Nebago",
+    "indonesia": "mengganggu",
+    "contoh": ""
+  },
+  {
+    "id": 279,
+    "kaili_ledo": "Bago",
+    "indonesia": "sibukan, tugas",
+    "contoh": ""
+  },
+  {
+    "id": 280,
+    "kaili_ledo": "Nabago",
+    "indonesia": "sibuk",
+    "contoh": ""
+  },
+  {
+    "id": 281,
+    "kaili_ledo": "Nabago Rara",
+    "indonesia": "pikiran dialihkan ke kesibukan, karena banyak kesibukan sehingga dirasa tidak bisa memikirkan hal lain.",
+    "contoh": ""
+  },
+  {
+    "id": 282,
+    "kaili_ledo": "Bagona",
+    "indonesia": "kesibukannya; tugas",
+    "contoh": "Nadea bagona totua haitu! Banyak pekerjaan orang tua itu!"
+  },
+  {
+    "id": 283,
+    "kaili_ledo": "Nobago",
+    "indonesia": "bertugas",
+    "contoh": ""
+  },
+  {
+    "id": 284,
+    "kaili_ledo": "Bai!",
+    "indonesia": "partikel menunjukkan tidak percaya atau tidak setuju",
+    "contoh": "Bai! Hau ia tano? Betulkah dia pergi? (Saya tidak percaya!)"
+  },
+  {
+    "id": 285,
+    "kaili_ledo": "Nabai",
+    "indonesia": "kering",
+    "contoh": ""
+  },
+  {
+    "id": 286,
+    "kaili_ledo": "Nabai Tambolo",
+    "indonesia": "haus",
+    "contoh": ""
+  },
+  {
+    "id": 287,
+    "kaili_ledo": "Kabaina",
+    "indonesia": "tempat yg kering",
+    "contoh": "Ata sou kami naboru ntoto sampe ledo nikava kami kabaina. Atap rumah kami bocor sekali sehingga kami tidak dapat tempat yg kering."
+  },
+  {
+    "id": 288,
+    "kaili_ledo": "Nompovai",
+    "indonesia": "menjemur",
+    "contoh": ""
+  },
+  {
+    "id": 289,
+    "kaili_ledo": "Nobaisi",
+    "indonesia": "mengeringkan; dibuat menjadi \nkering, yaitu ditutup sumber air dan membuka \njalan keluar.",
+    "contoh": "Baisi ruru Gumbasa, ala mamala rapakabelo. Keringkan dulu saluran Gumbasa, supaya dapat dikerjakan."
+  },
+  {
+    "id": 290,
+    "kaili_ledo": "Nakabaisa",
+    "indonesia": "kehabisan air pada saat dibutuhkan",
+    "contoh": ""
+  },
+  {
+    "id": 291,
+    "kaili_ledo": "Bai Kasubi",
+    "indonesia": "ubi kayu yg dimasak di bambu",
+    "contoh": ""
+  },
+  {
+    "id": 292,
+    "kaili_ledo": "Bailo",
+    "indonesia": "sekoi; jawawut; sejenis gandum yg kecil",
+    "contoh": ""
+  },
+  {
+    "id": 293,
+    "kaili_ledo": "Baipia",
+    "indonesia": "dulu, sudah lama",
+    "contoh": ""
+  },
+  {
+    "id": 294,
+    "kaili_ledo": "Baja",
+    "indonesia": "1) baja; topi besi. 2) kekerasan besi.",
+    "contoh": ""
+  },
+  {
+    "id": 295,
+    "kaili_ledo": "Nosonggo Baja",
+    "indonesia": "bertopi baja; topi dibuat dari besi yg dipakai untuk melindungi kepala",
+    "contoh": ""
+  },
+  {
+    "id": 296,
+    "kaili_ledo": "Ase Nobaja",
+    "indonesia": "besi yg mempunyai baja; besi yg dikeraskan dalam api",
+    "contoh": ""
+  },
+  {
+    "id": 297,
+    "kaili_ledo": "Baja Ntaono",
+    "indonesia": "kekerasan besi",
+    "contoh": "Ane domo ria baja ntaono domo matada. Kalau parang \nhilang kekerasan, tidak dapat tajam lagi."
+  },
+  {
+    "id": 298,
+    "kaili_ledo": "Baja Lauro",
+    "indonesia": "lapisan keras di bagian luar beberapa jenis rotan, rotan ini lebih kuat dan tidak mudah ditekuk. t",
+    "contoh": ""
+  },
+  {
+    "id": 299,
+    "kaili_ledo": "Bajinga",
+    "indonesia": "pelacur, tunasusila",
+    "contoh": ""
+  },
+  {
+    "id": 300,
+    "kaili_ledo": "Baju",
+    "indonesia": "baju, kameja, pakaian",
+    "contoh": ""
+  },
+  {
+    "id": 301,
+    "kaili_ledo": "Nobaju",
+    "indonesia": "Berbaju",
+    "contoh": ""
+  }
+]
