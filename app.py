@@ -10,7 +10,7 @@ st.set_page_config(
     page_title="Kaili Ledo Dictionary",
     page_icon="📖",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="collapsed",   # sidebar not used anymore
 )
 
 # ─── LOAD DATA ────────────────────────────────────────────────────────────────
@@ -29,50 +29,120 @@ def load_data():
 df = load_data()
 
 # ─── CSS ──────────────────────────────────────────────────────────────────────
-# Strategy:
-#   • Never use "* { color !important }" — it bleeds into intentionally-light sections.
-#   • Custom HTML elements carry their own explicit colors (hardcoded hex, not CSS vars).
-#   • Only target specific Streamlit native widgets for color overrides.
-#   • Sidebar is scoped to [data-testid="stSidebar"] child tags, not via *.
-
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap');
 
-/* ── Global reset ──────────────────────────────── */
-html, body, [class*="css"] {
-  font-family: 'DM Sans', sans-serif;
-}
+html, body, [class*="css"] { font-family: 'DM Sans', sans-serif; }
 #MainMenu, footer, header { visibility: hidden; }
+
+/* Hide sidebar toggle button completely */
+[data-testid="collapsedControl"] { display: none !important; }
+section[data-testid="stSidebar"]  { display: none !important; }
+
 .block-container {
-  padding-top: 1.2rem;
-  padding-bottom: 2rem;
-  max-width: 1380px;
+  padding: 0 !important;
+  max-width: 100% !important;
 }
 
-/* ── App background ────────────────────────────── */
+/* ── App background ── */
 .stApp {
   background-color: #f5efe6;
   background-image:
-    radial-gradient(circle at 18% 55%, rgba(193,127,66,.07) 0%, transparent 45%),
-    radial-gradient(circle at 82% 15%, rgba(45,80,22,.05)  0%, transparent 45%);
+    radial-gradient(circle at 15% 50%, rgba(193,127,66,.07) 0%, transparent 45%),
+    radial-gradient(circle at 85% 15%, rgba(45,80,22,.05)  0%, transparent 45%);
 }
 
-/* ── Streamlit native text — dark in main area ─── */
-/* Target only widget-level text, not the whole app */
+/* ── Top navbar ── */
+.topnav {
+  background: linear-gradient(135deg, #1a1410 0%, #2d1f12 60%, #1e2d10 100%);
+  padding: .85rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(193,127,66,.3);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.topnav-brand {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+.topnav-logo { font-size: 1.6rem; line-height: 1; }
+.topnav-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #e8c898;
+  line-height: 1.2;
+}
+.topnav-sub {
+  font-size: .62rem;
+  color: rgba(255,255,255,.38);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+.topnav-count {
+  font-size: .75rem;
+  color: rgba(255,255,255,.38);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 20px;
+  padding: 3px 12px;
+}
+.topnav-count span { color: #e8c898; font-weight: 600; }
+
+/* ── Page wrapper ── */
+.page-wrap {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 3rem;
+}
+
+/* ── Streamlit tab navigation (main nav) ── */
+.stTabs [data-baseweb="tab-list"] {
+  background: #1a1410 !important;
+  gap: 0 !important;
+  border-bottom: none !important;
+  padding: 0 2.5rem;
+  overflow-x: auto;
+}
+.stTabs [data-baseweb="tab"] {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 3px solid transparent !important;
+  color: rgba(255,255,255,.45) !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: .84rem !important;
+  font-weight: 500 !important;
+  padding: .75rem 1.3rem !important;
+  transition: color .2s, border-color .2s !important;
+  white-space: nowrap;
+}
+.stTabs [data-baseweb="tab"]:hover {
+  color: #e8c898 !important;
+}
+.stTabs [aria-selected="true"] {
+  color: #e8c898 !important;
+  border-bottom: 3px solid #c17f42 !important;
+  font-weight: 600 !important;
+}
+/* Tab content area */
+.stTabs [data-baseweb="tab-panel"] {
+  padding: 0 !important;
+}
+
+/* ── Streamlit native widgets ── */
 .stTextInput  label,
 .stTextArea   label,
 .stSelectbox  label,
 .stNumberInput label,
-.stRadio      label,
-.stForm       label,
 [data-testid="stWidgetLabel"] {
   color: #4a3f35 !important;
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: .85rem !important;
+  font-weight: 500 !important;
 }
-
-/* Input / textarea text & background */
 .stTextInput  input,
 .stTextArea   textarea,
 .stNumberInput input {
@@ -94,58 +164,27 @@ html, body, [class*="css"] {
 .stTextArea   textarea::placeholder {
   color: #b0a090 !important;
 }
-
-/* Selectbox text */
-[data-testid="stSelectbox"] div[data-baseweb="select"] > div,
-[data-testid="stSelectbox"] span {
-  color: #1a1410 !important;
-  font-family: 'DM Sans', sans-serif !important;
-}
 [data-testid="stSelectbox"] [data-baseweb="select"] {
   background: #fdfaf6 !important;
   border-color: #e2d5c8 !important;
   border-radius: 10px !important;
 }
-
-/* Radio buttons in main area */
-section[data-testid="stMain"] .stRadio p,
-section[data-testid="stMain"] .stRadio span {
+[data-testid="stSelectbox"] div[data-baseweb="select"] > div,
+[data-testid="stSelectbox"] span {
   color: #1a1410 !important;
-}
-
-/* Tabs */
-.stTabs [data-baseweb="tab-list"] {
-  background: transparent;
-  border-bottom: 2px solid #e2d5c8;
-  gap: 0;
-}
-.stTabs [data-baseweb="tab"] {
-  background: transparent !important;
-  border: none !important;
-  color: #9c8878 !important;
   font-family: 'DM Sans', sans-serif !important;
-  font-size: 0.88rem !important;
-  font-weight: 500 !important;
-  padding: 0.5rem 1.4rem !important;
-  transition: color .15s;
-}
-.stTabs [aria-selected="true"] {
-  color: #8a5a2a !important;
-  border-bottom: 2px solid #8a5a2a !important;
-  font-weight: 600 !important;
 }
 
-/* Buttons */
+/* ── Buttons ── */
 .stButton > button {
   background: #8a5a2a !important;
   color: #fff !important;
   border: none !important;
   border-radius: 10px !important;
-  padding: 0.55rem 1.6rem !important;
+  padding: .55rem 1.6rem !important;
   font-family: 'DM Sans', sans-serif !important;
-  font-size: 0.88rem !important;
+  font-size: .88rem !important;
   font-weight: 500 !important;
-  letter-spacing: .02em !important;
   transition: background .2s, transform .15s, box-shadow .2s !important;
 }
 .stButton > button:hover {
@@ -153,111 +192,68 @@ section[data-testid="stMain"] .stRadio span {
   transform: translateY(-2px) !important;
   box-shadow: 0 6px 18px rgba(138,90,42,.28) !important;
 }
-.stButton > button:active {
-  transform: translateY(0) !important;
-}
-
-/* Form submit button */
 .stFormSubmitButton > button {
   background: #2d5016 !important;
   color: #fff !important;
   border-radius: 10px !important;
-  font-family: 'DM Sans', sans-serif !important;
   font-weight: 600 !important;
-  transition: background .2s, transform .15s, box-shadow .2s !important;
+  transition: background .2s, transform .15s !important;
 }
 .stFormSubmitButton > button:hover {
   background: #4a7c2f !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 6px 18px rgba(45,80,22,.28) !important;
 }
 
-/* Alerts */
-.stSuccess, .stError, .stWarning, .stInfo {
-  border-radius: 10px !important;
-}
-
-/* ── Sidebar ────────────────────────────────────── */
-[data-testid="stSidebar"] {
-  background: linear-gradient(170deg, #1a1410 0%, #2d1f12 60%, #1e2d10 100%);
-  border-right: 1px solid #5a3a1a;
-}
-/* Text inside sidebar — explicitly white/cream */
-[data-testid="stSidebar"] p,
-[data-testid="stSidebar"] span:not(.stRadio span),
-[data-testid="stSidebar"] div:not([data-baseweb]):not([class*="st"]),
-[data-testid="stSidebar"] small {
-  color: #f5efe6 !important;
-}
-[data-testid="stSidebar"] label,
-[data-testid="stSidebar"] .stRadio label,
-[data-testid="stSidebar"] [data-testid="stWidgetLabel"] {
-  color: #e8c898 !important;
-}
-/* Radio options in sidebar */
-[data-testid="stSidebar"] .stRadio div[role="radiogroup"] label p {
-  color: #f5efe6 !important;
-  font-size: 0.9rem !important;
-}
-[data-testid="stSidebar"] .stRadio div[role="radiogroup"] label:hover p {
-  color: #e8c898 !important;
-}
-[data-testid="stSidebar"] hr {
-  border-color: rgba(255,255,255,.1) !important;
-}
-
-/* ── Custom HTML components ─────────────────────── */
-/* All colors are hardcoded in the HTML below — no CSS var needed */
-
+/* ── Custom HTML components ── */
 .word-card {
   background: #fdfaf6;
   border: 1px solid #e2d5c8;
   border-left: 4px solid #c17f42;
   border-radius: 12px;
   padding: 1.1rem 1.4rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: .75rem;
   transition: border-left-color .2s, box-shadow .2s, transform .2s;
   box-shadow: 0 1px 6px rgba(0,0,0,.04);
 }
 .word-card:hover {
   border-left-color: #2d5016;
-  box-shadow: 0 4px 18px rgba(0,0,0,.08);
+  box-shadow: 0 4px 18px rgba(0,0,0,.09);
   transform: translateY(-2px);
 }
 .word-kaili {
   font-family: 'Playfair Display', serif;
-  font-size: 1.28rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: #7a4f26;   /* always explicit dark brown */
-  margin: 0 0 0.18rem 0;
+  color: #7a4f26;
+  margin: 0 0 .18rem 0;
   line-height: 1.3;
 }
 .word-meaning {
-  font-size: 0.93rem;
-  color: #3d342c;   /* always explicit dark */
-  margin: 0 0 0.3rem 0;
+  font-size: .93rem;
+  color: #3d342c;
+  margin: 0 0 .3rem 0;
   line-height: 1.55;
 }
 .word-example {
-  font-size: 0.8rem;
-  color: #8a7a6e;   /* medium grey-brown */
+  font-size: .8rem;
+  color: #8a7a6e;
   font-style: italic;
   border-left: 2px solid #e8c898;
-  padding-left: 0.7rem;
-  margin-top: 0.45rem;
+  padding-left: .7rem;
+  margin-top: .45rem;
   line-height: 1.6;
 }
 .word-badge {
   display: inline-block;
   background: #f0ddb0;
   color: #7a4f26;
-  font-size: 0.65rem;
+  font-size: .64rem;
   font-weight: 700;
   padding: 2px 9px;
   border-radius: 20px;
   text-transform: uppercase;
   letter-spacing: .06em;
-  margin-bottom: 0.35rem;
+  margin-bottom: .35rem;
 }
 
 .hero-banner {
@@ -270,168 +266,59 @@ section[data-testid="stMain"] .stRadio span {
 }
 .hero-banner::before {
   content: "K";
-  position: absolute;
-  right: -10px; top: -40px;
-  font-size: 240px;
-  color: rgba(255,255,255,.035);
-  font-family: 'Playfair Display', serif;
-  line-height: 1;
+  position: absolute; right: -10px; top: -40px;
+  font-size: 240px; color: rgba(255,255,255,.035);
+  font-family: 'Playfair Display', serif; line-height: 1;
 }
-.hero-tag  { color: #e8c898; font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; margin-bottom: .7rem; }
-.hero-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.6rem;
-  font-weight: 700;
-  color: #ffffff;   /* hardcoded white */
-  margin: 0;
-  line-height: 1.15;
-}
-.hero-desc {
-  color: rgba(255,255,255,.62);  /* hardcoded */
-  font-size: .88rem;
-  margin-top: .9rem;
-  max-width: 580px;
-  line-height: 1.7;
-}
+.hero-tag   { color: #e8c898; font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; margin-bottom: .7rem; }
+.hero-title { font-family: 'Playfair Display', serif; font-size: 2.6rem; font-weight: 700; color: #fff; margin: 0; line-height: 1.15; }
+.hero-desc  { color: rgba(255,255,255,.62); font-size: .88rem; margin-top: .9rem; max-width: 580px; line-height: 1.7; }
 
-.stat-card {
-  background: #fdfaf6;
-  border: 1px solid #e2d5c8;
-  border-radius: 12px;
-  padding: 1.25rem 1rem;
-  text-align: center;
-  box-shadow: 0 1px 4px rgba(0,0,0,.03);
-}
-.stat-number {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.1rem;
-  font-weight: 700;
-  color: #8a5a2a;   /* hardcoded */
-  line-height: 1;
-}
-.stat-label {
-  font-size: .73rem;
-  color: #9c8878;   /* hardcoded */
-  text-transform: uppercase;
-  letter-spacing: .09em;
-  margin-top: .3rem;
-}
+.stat-card   { background: #fdfaf6; border: 1px solid #e2d5c8; border-radius: 12px; padding: 1.25rem 1rem; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,.03); }
+.stat-number { font-family: 'Playfair Display', serif; font-size: 2.1rem; font-weight: 700; color: #8a5a2a; line-height: 1; }
+.stat-label  { font-size: .73rem; color: #9c8878; text-transform: uppercase; letter-spacing: .09em; margin-top: .3rem; }
 
-.wotd-card {
-  background: linear-gradient(135deg, #2d5016 0%, #4a7c2f 100%);
-  border-radius: 14px;
-  padding: 1.8rem 2rem;
-  margin-bottom: 1rem;
-}
-.wotd-label {
-  font-size: .7rem;
-  text-transform: uppercase;
-  letter-spacing: .13em;
-  color: rgba(255,255,255,.55);  /* hardcoded */
-  margin-bottom: .7rem;
-}
-.wotd-word {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #ffffff;   /* hardcoded */
-  margin: 0;
-}
-.wotd-meaning {
-  font-size: .93rem;
-  color: rgba(255,255,255,.88);  /* hardcoded */
-  margin-top: .45rem;
-  line-height: 1.55;
-}
-.wotd-example {
-  font-size: .8rem;
-  color: rgba(255,255,255,.6);   /* hardcoded */
-  font-style: italic;
-  margin-top: .85rem;
-  border-top: 1px solid rgba(255,255,255,.15);
-  padding-top: .75rem;
-  line-height: 1.6;
-}
+.wotd-card    { background: linear-gradient(135deg, #2d5016 0%, #4a7c2f 100%); border-radius: 14px; padding: 1.8rem 2rem; margin-bottom: 1rem; }
+.wotd-label   { font-size: .7rem; text-transform: uppercase; letter-spacing: .13em; color: rgba(255,255,255,.55); margin-bottom: .7rem; }
+.wotd-word    { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: #fff; margin: 0; }
+.wotd-meaning { font-size: .93rem; color: rgba(255,255,255,.88); margin-top: .45rem; line-height: 1.55; }
+.wotd-example { font-size: .8rem; color: rgba(255,255,255,.6); font-style: italic; margin-top: .85rem; border-top: 1px solid rgba(255,255,255,.15); padding-top: .75rem; line-height: 1.6; }
 
 .section-title {
   font-family: 'Playfair Display', serif;
-  font-size: 1.35rem;
-  color: #1a1410;   /* hardcoded */
+  font-size: 1.35rem; color: #1a1410;
   margin: 1.4rem 0 .9rem;
-  display: flex;
-  align-items: center;
-  gap: .5rem;
+  display: flex; align-items: center; gap: .5rem;
 }
-.section-title::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: #e2d5c8;
-  margin-left: .8rem;
-}
+.section-title::after { content: ''; flex: 1; height: 1px; background: #e2d5c8; margin-left: .8rem; }
 
-.info-box {
-  background: rgba(193,127,66,.07);
-  border: 1px solid #e8c898;
-  border-radius: 10px;
-  padding: .85rem 1.1rem;
-  font-size: .85rem;
-  color: #4a3f35;   /* hardcoded */
-  margin: .6rem 0 1rem;
-  line-height: 1.6;
-}
+.info-box { background: rgba(193,127,66,.07); border: 1px solid #e8c898; border-radius: 10px; padding: .85rem 1.1rem; font-size: .85rem; color: #4a3f35; margin: .6rem 0 1rem; line-height: 1.6; }
 .info-box strong { color: #7a4f26; }
 
-.result-tag {
-  display: inline-block;
-  font-size: .78rem;
-  color: #9c8878;
-  background: #fdfaf6;
-  border: 1px solid #e2d5c8;
-  padding: 3px 12px;
-  border-radius: 20px;
-  margin-bottom: .9rem;
-}
+.result-tag { display: inline-block; font-size: .78rem; color: #9c8878; background: #fdfaf6; border: 1px solid #e2d5c8; padding: 3px 12px; border-radius: 20px; margin-bottom: .9rem; }
 
 hr { border: none; border-top: 1px solid #e2d5c8; margin: 1rem 0; }
 </style>
 """, unsafe_allow_html=True)
 
-# ─── SIDEBAR ──────────────────────────────────────────────────────────────────
-with st.sidebar:
-    st.markdown("""
-    <div style="text-align:center;padding:1.2rem 0 1.8rem;">
-      <div style="font-size:2.6rem;line-height:1;">📖</div>
-      <div style="font-family:'Playfair Display',serif;font-size:1.08rem;
-                  color:#e8c898;font-weight:700;margin-top:.5rem;">
-        Kaili Ledo Dictionary
-      </div>
-      <div style="font-size:.68rem;color:rgba(255,255,255,.35);
-                  letter-spacing:.13em;text-transform:uppercase;margin-top:.3rem;">
-        Digital Preservation Project
-      </div>
+# ─── TOP NAVBAR (always visible) ──────────────────────────────────────────────
+st.markdown(f"""
+<div class="topnav">
+  <div class="topnav-brand">
+    <div class="topnav-logo">📖</div>
+    <div>
+      <div class="topnav-name">Kaili Ledo Dictionary</div>
+      <div class="topnav-sub">Digital Preservation Project</div>
     </div>
-    """, unsafe_allow_html=True)
-
-    menu = st.radio(
-        "nav", label_visibility="collapsed",
-        options=["🏠  Home", "🔍  Search", "📚  Browse", "➕  Add Word", "📊  Statistics", "ℹ️  About"],
-    )
-
-    st.markdown("<hr>", unsafe_allow_html=True)
-    st.markdown(f"""
-    <div style="font-size:.74rem;color:rgba(255,255,255,.32);
-                text-align:center;line-height:2;padding:.3rem 0;">
-      Total Entries&nbsp;
-      <span style="color:#e8c898;font-weight:600;">{len(df):,}</span><br>
-      Source: Kamus Kaili-Ledo<br>
-      Author: Donna Evans (2003)<br>
-      SIL International
-    </div>
-    """, unsafe_allow_html=True)
+  </div>
+  <div class="topnav-count">
+    <span>{len(df):,}</span> entries
+  </div>
+</div>
+""", unsafe_allow_html=True)
 
 # ─── HELPERS ──────────────────────────────────────────────────────────────────
-def highlight(text: str, query: str) -> str:
+def highlight(text, query):
     if not query:
         return text
     return re.sub(
@@ -458,10 +345,21 @@ def get_wotd():
         pool = df[df["kaili_ledo"] != ""]
     return pool.iloc[date.today().toordinal() % len(pool)]
 
+# ─── MAIN TABS (navigation) ───────────────────────────────────────────────────
+tab_home, tab_search, tab_browse, tab_add, tab_stats, tab_about = st.tabs([
+    "🏠  Home",
+    "🔍  Search",
+    "📚  Browse",
+    "➕  Add Word",
+    "📊  Statistics",
+    "ℹ️  About",
+])
+
 # ═══════════════════════════════════════════════════════════════════════════════
 #  HOME
 # ═══════════════════════════════════════════════════════════════════════════════
-if menu == "🏠  Home":
+with tab_home:
+    st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
 
     st.markdown("""
     <div class="hero-banner">
@@ -472,10 +370,8 @@ if menu == "🏠  Home":
         people in the Palu Valley. Entries are drawn from conversations, oral stories, and
         written texts compiled by SIL International.
       </div>
-    </div>
-    """, unsafe_allow_html=True)
+    </div>""", unsafe_allow_html=True)
 
-    # ── Stats row
     has_ex  = (df["contoh"] != "").sum()
     letters = df[df["kaili_ledo"] != ""]["first_letter"].nunique()
     pct     = round(has_ex / len(df) * 100)
@@ -495,7 +391,6 @@ if menu == "🏠  Home":
             </div>""", unsafe_allow_html=True)
 
     st.markdown("")
-
     left, right = st.columns([3, 2], gap="large")
 
     with left:
@@ -519,16 +414,20 @@ if menu == "🏠  Home":
         for _, row in df[df["kaili_ledo"] != ""].tail(8).iloc[::-1].iterrows():
             word_card(row)
 
+    st.markdown('</div>', unsafe_allow_html=True)
+
 # ═══════════════════════════════════════════════════════════════════════════════
 #  SEARCH
 # ═══════════════════════════════════════════════════════════════════════════════
-elif menu == "🔍  Search":
-
+with tab_search:
+    st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
     st.markdown('<div class="section-title">🔍 Search the Dictionary</div>', unsafe_allow_html=True)
-    tab1, tab2 = st.tabs(["  Kaili Ledo → Indonesian  ", "  Indonesian → Kaili Ledo  "])
 
-    with tab1:
-        q = st.text_input("Enter a Kaili Ledo word", placeholder="e.g.  Nangala,  Baju,  Ada …")
+    s1, s2 = st.tabs(["  Kaili Ledo → Indonesian  ", "  Indonesian → Kaili Ledo  "])
+
+    with s1:
+        q = st.text_input("Enter a Kaili Ledo word", placeholder="e.g.  Nangala,  Baju,  Ada …",
+                          key="search_kl")
         if q:
             res = df[df["kaili_ledo"].str.contains(q, case=False, na=False)]
             st.markdown(f'<span class="result-tag">{len(res)} result(s) found</span>',
@@ -539,9 +438,9 @@ elif menu == "🔍  Search":
                 for _, row in res.iterrows():
                     word_card(row, q)
 
-    with tab2:
+    with s2:
         q2 = st.text_input("Enter an Indonesian word or meaning",
-                           placeholder="e.g.  Mengambil,  Agama,  Dagu …")
+                           placeholder="e.g.  Mengambil,  Agama,  Dagu …", key="search_id")
         if q2:
             res2 = df[df["indonesia"].str.contains(q2, case=False, na=False)]
             st.markdown(f'<span class="result-tag">{len(res2)} result(s) found</span>',
@@ -552,32 +451,30 @@ elif menu == "🔍  Search":
                 for _, row in res2.iterrows():
                     word_card(row, q2)
 
+    st.markdown('</div>', unsafe_allow_html=True)
+
 # ═══════════════════════════════════════════════════════════════════════════════
 #  BROWSE
 # ═══════════════════════════════════════════════════════════════════════════════
-elif menu == "📚  Browse":
-
+with tab_browse:
+    st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
     st.markdown('<div class="section-title">📚 Browse by Starting Letter</div>', unsafe_allow_html=True)
 
-    letters = ["All"] + sorted(df[df["kaili_ledo"] != ""]["first_letter"].dropna().unique())
-    sel = st.selectbox(
-        "Choose a starting letter",
-        options=letters,
-        format_func=lambda x: "📖  Show All Entries" if x == "All" else f"Letter  {x}",
-    )
+    all_letters = ["All"] + sorted(df[df["kaili_ledo"] != ""]["first_letter"].dropna().unique())
+    sel = st.selectbox("Choose a starting letter", options=all_letters,
+                       format_func=lambda x: "📖  Show All Entries" if x == "All" else f"Letter  {x}")
 
     filtered = (df[df["kaili_ledo"] != ""].sort_values("kaili_ledo")
                 if sel == "All"
                 else df[df["first_letter"] == sel].sort_values("kaili_ledo"))
 
-    PAGE = 20
+    PAGE  = 20
     total = max(1, (len(filtered) - 1) // PAGE + 1)
-
-    col_info, col_page = st.columns([3, 1])
-    with col_info:
+    ci, cp = st.columns([3, 1])
+    with ci:
         st.markdown(f'<span class="result-tag">{len(filtered)} entries</span>',
                     unsafe_allow_html=True)
-    with col_page:
+    with cp:
         page = st.number_input("Page", min_value=1, max_value=total, value=1, step=1)
 
     start = (page - 1) * PAGE
@@ -587,35 +484,33 @@ elif menu == "📚  Browse":
     if total > 1:
         st.markdown(
             f'<p style="text-align:center;color:#9c8878;font-size:.82rem;margin-top:.5rem;">'
-            f'Page {page} of {total}</p>',
-            unsafe_allow_html=True
-        )
+            f'Page {page} of {total}</p>', unsafe_allow_html=True)
+
+    st.markdown('</div>', unsafe_allow_html=True)
 
 # ═══════════════════════════════════════════════════════════════════════════════
 #  ADD WORD
 # ═══════════════════════════════════════════════════════════════════════════════
-elif menu == "➕  Add Word":
-
+with tab_add:
+    st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
     st.markdown('<div class="section-title">➕ Contribute a New Word</div>', unsafe_allow_html=True)
     st.markdown("""
     <div class="info-box">
       💡 <strong>Help grow the dictionary.</strong> Every word contributed helps preserve
-      Kaili Ledo as a living language for future generations.
-      Fields marked * are required.
+      Kaili Ledo as a living language for future generations. Fields marked * are required.
     </div>""", unsafe_allow_html=True)
 
     with st.form("add_word_form", clear_on_submit=True):
-        c1, c2 = st.columns(2)
-        with c1:
+        col1, col2 = st.columns(2)
+        with col1:
             new_kaili   = st.text_input("Kaili Ledo Word *", placeholder="e.g. Nobose")
-        with c2:
+        with col2:
             new_meaning = st.text_input("Indonesian Meaning *",
                                         placeholder="e.g. Berenang (Swimming)")
         new_example = st.text_area(
             "Example Sentence (optional)",
             placeholder="A sentence in Kaili Ledo followed by its Indonesian translation…",
-            height=110,
-        )
+            height=110)
         submitted = st.form_submit_button("💾  Save Word", use_container_width=True)
 
     if submitted:
@@ -624,12 +519,10 @@ elif menu == "➕  Add Word":
         else:
             dup = df[df["kaili_ledo"].str.lower() == new_kaili.strip().lower()]
             if not dup.empty:
-                st.warning(
-                    f"⚠️  **{new_kaili}** already exists with meaning: _{dup.iloc[0]['indonesia']}_"
-                )
+                st.warning(f"⚠️  **{new_kaili}** already exists: _{dup.iloc[0]['indonesia']}_")
             else:
                 entry = {
-                    "id": int(df["id"].max()) + 1,
+                    "id":         int(df["id"].max()) + 1,
                     "kaili_ledo": new_kaili.strip(),
                     "indonesia":  new_meaning.strip(),
                     "contoh":     new_example.strip(),
@@ -648,7 +541,6 @@ elif menu == "➕  Add Word":
                                             entry["indonesia"], entry["contoh"]])
                 st.success(f"✅  **{new_kaili}** has been added to the dictionary!")
                 st.cache_data.clear()
-
                 ex_html = (f'<div class="word-example">📝 {new_example}</div>'
                            if new_example else "")
                 st.markdown(f"""
@@ -664,21 +556,22 @@ elif menu == "➕  Add Word":
     for _, row in df.tail(5).iloc[::-1].iterrows():
         word_card(row)
 
+    st.markdown('</div>', unsafe_allow_html=True)
+
 # ═══════════════════════════════════════════════════════════════════════════════
 #  STATISTICS
 # ═══════════════════════════════════════════════════════════════════════════════
-elif menu == "📊  Statistics":
-
+with tab_stats:
     import plotly.express as px
     import plotly.graph_objects as go
 
+    st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
     st.markdown('<div class="section-title">📊 Dictionary Statistics</div>', unsafe_allow_html=True)
 
     BG  = "#fdfaf6"
     INK = "#1a1410"
-    PAL = ["#e8c898", "#c17f42", "#8a5a2a", "#4a7c2f", "#2d5016"]
+    PAL = ["#e8c898","#c17f42","#8a5a2a","#4a7c2f","#2d5016"]
 
-    # ── Chart 1: letters
     lc = (df[df["kaili_ledo"] != ""]
           .groupby("first_letter").size()
           .reset_index(name="count")
@@ -688,7 +581,7 @@ elif menu == "📊  Statistics":
                   title="Word Count by Starting Letter",
                   color="count",
                   color_continuous_scale=["#e8c898","#c17f42","#8a5a2a","#2d5016"],
-                  labels={"first_letter": "Starting Letter", "count": "Words"})
+                  labels={"first_letter":"Starting Letter","count":"Words"})
     fig1.update_layout(font_family="DM Sans", font_color=INK,
                        plot_bgcolor=BG, paper_bgcolor=BG,
                        coloraxis_showscale=False,
@@ -700,47 +593,36 @@ elif menu == "📊  Statistics":
     st.plotly_chart(fig1, use_container_width=True)
 
     col1, col2 = st.columns(2, gap="large")
-
-    # ── Chart 2: coverage donut
     with col1:
         has_ex = (df["contoh"] != "").sum()
-        no_ex  = len(df) - has_ex
         fig2 = go.Figure(go.Pie(
-            labels=["Has Example", "No Example"],
-            values=[has_ex, no_ex],
-            hole=.58,
-            marker_colors=["#2d5016","#e8c898"],
-            textinfo="percent+label",
-            textfont=dict(size=12, color=INK),
-        ))
+            labels=["Has Example","No Example"],
+            values=[has_ex, len(df)-has_ex],
+            hole=.58, marker_colors=["#2d5016","#e8c898"],
+            textinfo="percent+label", textfont=dict(size=12, color=INK)))
         fig2.update_layout(
-            title=dict(text="Example Sentence Coverage", font=dict(size=15, color=INK)),
+            title=dict(text="Example Sentence Coverage", font=dict(size=15,color=INK)),
             font_family="DM Sans", font_color=INK,
             plot_bgcolor=BG, paper_bgcolor=BG,
             showlegend=False, margin=dict(t=52,b=24,l=12,r=12),
             annotations=[dict(text=f"{round(has_ex/len(df)*100)}%",
-                              x=.5, y=.5, font=dict(size=24, color="#2d5016"),
-                              showarrow=False)]
-        )
+                              x=.5, y=.5, font=dict(size=24,color="#2d5016"),
+                              showarrow=False)])
         st.plotly_chart(fig2, use_container_width=True)
 
-    # ── Chart 3: definition length
     with col2:
         dv = df[df["kaili_ledo"] != ""].copy()
         dv["def_len"] = dv["indonesia"].str.len()
-        dv["bucket"]  = pd.cut(dv["def_len"],
-                               bins=[0,20,50,100,200,999],
+        dv["bucket"]  = pd.cut(dv["def_len"], bins=[0,20,50,100,200,999],
                                labels=["Very Short","Short","Medium","Long","Very Long"])
         bc = dv["bucket"].value_counts().reset_index()
-        bc.columns = ["Length", "count"]
-        fig3 = px.bar(bc, x="Length", y="count",
-                      title="Definition Length Distribution",
+        bc.columns = ["Length","count"]
+        fig3 = px.bar(bc, x="Length", y="count", title="Definition Length Distribution",
                       color="Length", color_discrete_sequence=PAL,
-                      labels={"Length": "Definition Length", "count": "Words"})
+                      labels={"Length":"Definition Length","count":"Words"})
         fig3.update_layout(font_family="DM Sans", font_color=INK,
-                           plot_bgcolor=BG, paper_bgcolor=BG,
-                           showlegend=False,
-                           title_font=dict(size=15, color=INK),
+                           plot_bgcolor=BG, paper_bgcolor=BG, showlegend=False,
+                           title_font=dict(size=15,color=INK),
                            margin=dict(t=52,b=24,l=12,r=12))
         fig3.update_traces(marker_line_width=0)
         fig3.update_xaxes(showgrid=False)
@@ -752,14 +634,15 @@ elif menu == "📊  Statistics":
     for _, row in dv.nlargest(5, "def_len").iterrows():
         word_card(row)
 
+    st.markdown('</div>', unsafe_allow_html=True)
+
 # ═══════════════════════════════════════════════════════════════════════════════
 #  ABOUT
 # ═══════════════════════════════════════════════════════════════════════════════
-elif menu == "ℹ️  About":
-
+with tab_about:
+    st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
     st.markdown('<div class="section-title">ℹ️ About This Project</div>', unsafe_allow_html=True)
 
-    # Intro card with green accent — hardcoded colors in style
     st.markdown("""
     <div class="word-card" style="border-left-color:#2d5016;">
       <div class="word-kaili" style="color:#2d5016;">The Kaili Ledo Language</div>
@@ -798,7 +681,7 @@ elif menu == "ℹ️  About":
           <div class="word-kaili">⚙️ Tech Stack</div>
           <div class="word-meaning">
             <table style="width:100%;border-collapse:collapse;font-size:.88rem;">
-              <tr><td style="color:#9c8878;padding:4px 0;width:40%;">Framework</td>
+              <tr><td style="color:#9c8878;padding:4px 0;width:42%;">Framework</td>
                   <td style="color:#3d342c;font-weight:500;">Python + Streamlit</td></tr>
               <tr><td style="color:#9c8878;padding:4px 0;">Data</td>
                   <td style="color:#3d342c;font-weight:500;">JSON + CSV (from MS Access)</td></tr>
@@ -818,7 +701,7 @@ elif menu == "ℹ️  About":
               <li>Push all files to a new GitHub repository</li>
               <li>Visit <strong style="color:#7a4f26;">share.streamlit.io</strong></li>
               <li>Connect your GitHub account</li>
-              <li>Select the repo &amp; file <code style="background:#f0ddb0;padding:1px 5px;border-radius:4px;color:#7a4f26;">app.py</code></li>
+              <li>Select the repo &amp; <code style="background:#f0ddb0;padding:1px 5px;border-radius:4px;color:#7a4f26;">app.py</code></li>
               <li>Click <strong style="color:#2d5016;">Deploy</strong> — live in minutes! 🎉</li>
             </ol>
           </div>
@@ -826,6 +709,8 @@ elif menu == "ℹ️  About":
 
     st.markdown("""
     <div class="info-box">
-      🤝 <strong>Contribute:</strong> Use the <em>Add Word</em> page to submit new entries directly.
+      🤝 <strong>Contribute:</strong> Use the <em>Add Word</em> tab to submit new entries directly.
       Every contribution helps keep Kaili Ledo alive for future generations.
     </div>""", unsafe_allow_html=True)
+
+    st.markdown('</div>', unsafe_allow_html=True)
